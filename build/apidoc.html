@@ -61,12 +61,65 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.static-favicon">module static-favicon</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.static-favicon.static-favicon">
+            function <span class="apidocSignatureSpan"></span>static-favicon
+            <span class="apidocSignatureSpan">(path, options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.static-favicon" id="apidoc.module.static-favicon">module static-favicon</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.static-favicon.static-favicon" id="apidoc.element.static-favicon.static-favicon">
+        function <span class="apidocSignatureSpan"></span>static-favicon
+        <span class="apidocSignatureSpan">(path, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function favicon(path, options){
+  var options = options || {}
+    , path = path || __dirname + &#x27;/favicon.ico&#x27;
+    , maxAge = options.maxAge || 86400000
+    , icon; // favicon cache
+
+  return function favicon(req, res, next){
+    if (&#x27;/favicon.ico&#x27; == req.url) {
+      if (icon) {
+        res.writeHead(200, icon.headers);
+        res.end(icon.body);
+      } else {
+        fs.readFile(path, function(err, buf){
+          if (err) return next(err);
+          icon = {
+            headers: {
+                &#x27;Content-Type&#x27;: &#x27;image/x-icon&#x27;
+              , &#x27;Content-Length&#x27;: buf.length
+              , &#x27;ETag&#x27;: &#x27;&#x22;&#x27; + md5(buf) + &#x27;&#x22;&#x27;
+              , &#x27;Cache-Control&#x27;: &#x27;public, max-age=&#x27; + (maxAge / 1000)
+            },
+            body: buf
+          };
+          res.writeHead(200, icon.headers);
+          res.end(icon.body);
+        });
+      }
+    } else {
+      next();
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

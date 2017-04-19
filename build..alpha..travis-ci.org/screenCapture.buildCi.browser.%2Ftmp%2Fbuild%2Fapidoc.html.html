@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/expressjs/favicon"
-
-    >static-favicon (v1.0.2)</a>
+    <a href="https://github.com/expressjs/favicon">static-favicon (v1.0.2)</a>
 </h1>
 <h4>favicon serving middleware with caching</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.static-favicon">module static-favicon</a><ol>
 
@@ -87,12 +80,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function favicon(path, options){
   var options = options || {}
-    , path = path || __dirname + &#x27;/favicon.ico&#x27;
+    , path = path || __dirname + '/favicon.ico'
     , maxAge = options.maxAge || 86400000
     , icon; // favicon cache
 
   return function favicon(req, res, next){
-    if (&#x27;/favicon.ico&#x27; == req.url) {
+    if ('/favicon.ico' == req.url) {
       if (icon) {
         res.writeHead(200, icon.headers);
         res.end(icon.body);
@@ -101,10 +94,10 @@
           if (err) return next(err);
           icon = {
             headers: {
-                &#x27;Content-Type&#x27;: &#x27;image/x-icon&#x27;
-              , &#x27;Content-Length&#x27;: buf.length
-              , &#x27;ETag&#x27;: &#x27;&#x22;&#x27; + md5(buf) + &#x27;&#x22;&#x27;
-              , &#x27;Cache-Control&#x27;: &#x27;public, max-age=&#x27; + (maxAge / 1000)
+                'Content-Type': 'image/x-icon'
+              , 'Content-Length': buf.length
+              , 'ETag': '"' + md5(buf) + '"'
+              , 'Cache-Control': 'public, max-age=' + (maxAge / 1000)
             },
             body: buf
           };
@@ -129,3 +122,4 @@
     ]
 </div>
 </div>
+</body></html>
