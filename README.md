@@ -1,9 +1,14 @@
-# api documentation for  [static-favicon (v1.0.2)](https://github.com/expressjs/favicon)  [![npm package](https://img.shields.io/npm/v/npmdoc-static-favicon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-static-favicon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-static-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-static-favicon)
+# npmdoc-static-favicon
+
+#### api documentation for  [static-favicon (v1.0.2)](https://github.com/expressjs/favicon)  [![npm package](https://img.shields.io/npm/v/npmdoc-static-favicon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-static-favicon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-static-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-static-favicon)
+
 #### favicon serving middleware with caching
 
-[![NPM](https://nodei.co/npm/static-favicon.png?downloads=true)](https://www.npmjs.com/package/static-favicon)
+[![NPM](https://nodei.co/npm/static-favicon.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/static-favicon)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-static-favicon/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-static-favicon_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-static-favicon/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-static-favicon/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-static-favicon/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-static-favicon/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-static-favicon/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-static-favicon/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "TJ Holowaychuk",
-        "email": "tj@vision-media.ca",
         "url": "http://tjholowaychuk.com"
     },
     "bugs": {
@@ -47,13 +51,11 @@
     "main": "./index.js",
     "maintainers": [
         {
-            "name": "shtylman",
-            "email": "shtylman@gmail.com"
+            "name": "shtylman"
         }
     ],
     "name": "static-favicon",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/expressjs/favicon.git"
@@ -64,16 +66,6 @@
     "version": "1.0.2"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module static-favicon](#apidoc.module.static-favicon)
-
-
-
-# <a name="apidoc.module.static-favicon"></a>[module static-favicon](#apidoc.module.static-favicon)
 
 
 
