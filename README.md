@@ -1,6 +1,6 @@
 # npmdoc-static-favicon
 
-#### api documentation for  [static-favicon (v1.0.2)](https://github.com/expressjs/favicon)  [![npm package](https://img.shields.io/npm/v/npmdoc-static-favicon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-static-favicon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-static-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-static-favicon)
+#### basic api documentation for  [static-favicon (v1.0.2)](https://github.com/expressjs/favicon)  [![npm package](https://img.shields.io/npm/v/npmdoc-static-favicon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-static-favicon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-static-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-static-favicon)
 
 #### favicon serving middleware with caching
 
@@ -63,7 +63,8 @@
     "scripts": {
         "test": "true"
     },
-    "version": "1.0.2"
+    "version": "1.0.2",
+    "bin": {}
 }
 ```
 
